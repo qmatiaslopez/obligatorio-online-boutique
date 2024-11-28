@@ -1,6 +1,6 @@
 # Online Boutique Infrastructure Project
 
-Este proyecto implementa la infraestructura necesaria para desplegar la aplicación Online Boutique de Google en AWS utilizando EKS (Elastic Kubernetes Service). Online Boutique es una aplicación de microservicios en la nube que cuenta con 11 servicios desarrollada por Google Cloud para demostrar el uso de tecnologías nativas de la nube.
+[En este repositorio](https://github.com/qmatiaslopez/obligatorio-online-boutique) se implementa la infraestructura necesaria para desplegar la aplicación Online Boutique de Google en AWS utilizando EKS (Elastic Kubernetes Service). Online Boutique es una aplicación de microservicios en la nube que cuenta con 11 servicios desarrollada por Google Cloud para demostrar el uso de tecnologías nativas de la nube.
 
 ## Arquitectura
 

@@ -15,6 +15,7 @@ aws-cli v2.21.3
 docker v24.0.7
 terraform v1.9.8
 kubectl v1.31.3
+git v2.43.0
 ```
 
 ### Instalación de Dependencias en Ubuntu 24.04
@@ -33,6 +34,18 @@ sudo snap install terraform --classic
 sudo apt update 
 sudo apt install docker.io 
 sudo usermod -aG docker ${USER}
+
+# Instalar Git
+sudo apt install git
+```
+
+### Obtener el Proyecto
+
+Para obtener una copia del proyecto, ejecuta:
+
+```bash
+git clone https://github.com/qmatiaslopez/obligatorio-online-boutique.git
+cd obligatorio-online-boutique
 ```
 
 ### Configuración del entorno

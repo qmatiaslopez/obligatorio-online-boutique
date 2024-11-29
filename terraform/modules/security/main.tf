@@ -158,16 +158,6 @@ resource "aws_security_group_rule" "pods_to_nodes" {
   description             = "Allow all traffic from pods to nodes"
 }
 
-resource "aws_security_group_rule" "eks_cluster_ingress_alb" {
-  type                     = "ingress"
-  from_port                = 30080
-  to_port                  = 30080
-  protocol                 = "tcp"
-  security_group_id        = data.aws_security_group.eks_cluster.id
-  source_security_group_id = aws_security_group.alb.id
-  description             = "Allow traffic from ALB to EKS NodePort"
-}
-
 # VPC CIDR -> Nodes
 resource "aws_security_group_rule" "vpc_to_nodes" {
   type              = "ingress"

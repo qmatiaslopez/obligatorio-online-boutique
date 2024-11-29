@@ -22,6 +22,16 @@ module "lb" {
   depends_on = [module.eks]
 }
 
+module "eks_sg_rules" {
+  source = "./modules/eks_sg_rules"
+
+  project_name         = var.project_name
+  environment         = var.environment
+  alb_security_group_id = module.security.alb_security_group_id
+
+  depends_on = [module.eks]
+}
+
 module "security" {
   source = "./modules/security"
 
